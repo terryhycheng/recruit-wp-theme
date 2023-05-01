@@ -19,7 +19,7 @@ $chars = ["a", "b", "c", "d"]
         $title = 'service_' . $char . '_title';
         $content = 'service_' . $char . '_content';
       ?>
-      <div class="bg-white p-8">
+      <div class="bg-white p-8 hover:-translate-y-2 transition-all">
         <div class="relative w-16">
           <img src="<?php echo $services[$icon] ?>" class="object-contain" alt="">
         </div>

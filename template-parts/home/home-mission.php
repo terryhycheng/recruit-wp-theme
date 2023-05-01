@@ -8,6 +8,7 @@
     <?php echo custom_link("about") ?>
   </div>
   <div class="relative lg:max-w-[50vw] overflow-hidden">
-    <img src="<?php echo $mission['image'] ?>" alt="misson-image" class="object-cover w-full h-full">
+    <img src="<?php echo $mission['image'] ?>" alt="misson-image"
+      class="object-cover w-full h-full hover:scale-105 transition-all duration-500">
   </div>
 </div>

@@ -6,7 +6,7 @@
       <br /> meet <br /> opportunity.
     </h1>
     <a href="/index.php/about"
-      class="w-full max-w-[250px] px-6 py-2 capitalize border border-white flex justify-between items-center mt-10">
+      class="w-full max-w-[250px] px-6 py-2 capitalize border border-white flex justify-between items-center mt-10 hover:bg-white hover:text-main transition-all duration-300">
       <p class="text-center flex-1">
         job openings
       </p>
