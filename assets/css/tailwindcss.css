@@ -24,3 +24,9 @@ h5,
 h6 {
   font-family: "Archivo Black", sans-serif;
 }
+
+@layer components {
+  .small-title {
+    @apply uppercase text-secondary font-bold tracking-wider mb-2;
+  }
+}
