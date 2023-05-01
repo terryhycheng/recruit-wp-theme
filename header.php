@@ -11,4 +11,6 @@
 
 <body>
 
-  <p class="text-secondary">header</p>
+  <header>
+    <?php get_template_part('template-parts/top-bar') ?>
+  </header>
