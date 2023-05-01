@@ -1,11 +1,3 @@
-/* 
-Theme Name: Recruit
-Author: Terry Cheng
-Author URL: www.terryhycheng.com
-Description: This theme is designed for a recruitment agency to introduce themselves to their clients and candidates and post job openings.
-Version: 1.0
-*/
-
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
 @tailwind base;
