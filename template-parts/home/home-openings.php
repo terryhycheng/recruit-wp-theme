@@ -1,4 +1,4 @@
-<div class="max-w-[1500px] mx-auto px-4 min-h-[40vh] py-20">
+<section class="max-w-[1500px] mx-auto px-4 min-h-[40vh] py-20">
   <div class="flex justify-between items-center">
     <div>
       <p class="small-title">jobs</p>
@@ -22,4 +22,4 @@
     </div>
     <?php endforeach; ?>
   </div>
-</div>
+</section>

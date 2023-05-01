@@ -11,8 +11,8 @@
 
 <body class="flex flex-col min-h-screen">
 
-  <header>
-    <?php get_template_part('template-parts/top-bar') ?>
-  </header>
+
+  <?php get_template_part('template-parts/top-bar') ?>
+
 
   <main class="flex-1">

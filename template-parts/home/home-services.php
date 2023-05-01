@@ -7,7 +7,7 @@ $chars = ["a", "b", "c", "d"]
 ?>
 
 
-<div class="bg-bgGray min-h-[50vh] flex flex-col justify-center">
+<section class="bg-bgGray min-h-[50vh] flex flex-col justify-center">
   <div class="max-w-[1500px] mx-auto my-10 px-4">
     <div class="text-center mb-16">
       <p class="small-title">services</p>
@@ -31,4 +31,4 @@ $chars = ["a", "b", "c", "d"]
       <?php endforeach; ?>
     </div>
   </div>
-</div>
+</section>

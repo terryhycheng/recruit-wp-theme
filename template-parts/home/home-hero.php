@@ -1,4 +1,4 @@
-<div class="relative overflow-hidden text-white min-h-[45vh] flex justify-center flex-col">
+<section class="relative overflow-hidden text-white min-h-[45vh] flex justify-center flex-col">
   <div class="max-w-[1500px] w-full mx-auto px-4">
     <p class="tracking-widest font-thin mb-2">Recruitment for creative people</p>
     <h1 class="text-3xl md:text-6xl uppercase leading-[1.1em]">
@@ -17,4 +17,4 @@
   </div>
   <img src="<?php echo get_template_directory_uri() . "/assets/img/hero-image.jpeg" ?>"
     class="absolute top-0 object-cover w-full h-full -z-10" alt="">
-</div>
+</section>

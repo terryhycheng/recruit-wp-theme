@@ -4,5 +4,6 @@
 <?php get_template_part('template-parts/home/home-mission') ?>
 <?php get_template_part('template-parts/home/home-services') ?>
 <?php get_template_part('template-parts/home/home-openings') ?>
+<?php get_template_part('template-parts/home/home-contact') ?>
 
 <?php get_footer() ?>
