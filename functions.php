@@ -12,6 +12,7 @@ add_action('after_setup_theme', 'recruit_init');
 function recruit_add_scripts()
 {
   wp_enqueue_style('recruit_style_css', get_template_directory_uri() . "/style.css", array());
+  wp_enqueue_script('recruit_script_js', get_template_directory_uri() . "/assets/js/main.js", array(), 1, true);
 }
 
 add_action('wp_enqueue_scripts', 'recruit_add_scripts');
