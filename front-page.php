@@ -1,7 +1,6 @@
 <?php get_header() ?>
 
-<div>
-  <h1>Hello World!</h1>
-</div>
+<?php get_template_part('template-parts/home-hero') ?>
+<?php get_template_part('template-parts/home-mission') ?>
 
 <?php get_footer() ?>
