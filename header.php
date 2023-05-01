@@ -9,8 +9,10 @@
   <?php wp_head() ?>
 </head>
 
-<body>
+<body class="flex flex-col min-h-screen">
 
   <header>
     <?php get_template_part('template-parts/top-bar') ?>
   </header>
+
+  <main class="flex-1">
