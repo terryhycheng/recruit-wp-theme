@@ -10,11 +10,15 @@
     <hr class="my-8">
     <h3 class="text-xl mb-4">Job Type</h3>
     <?php foreach ($types as $type) : ?>
-    <p class="capitalize"><?php echo $type ?></p>
+      <p class="capitalize"><?php echo $type ?></p>
     <?php endforeach; ?>
   </div>
   <div class="border p-10">
     <h3 class="text-xl mb-4">Job Reference No.</h3>
     <p>#<?php echo get_field('reference') ?></p>
   </div>
+  <a href="javascript:history.back()" class="mt-8 hidden lg:block">
+    <div class="bg-main text-white px-10 py-4 capitalize hover:bg-secondary hover:text-main transition-all">
+      back </div>
+  </a>
 </aside>
