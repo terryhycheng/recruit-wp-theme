@@ -5,7 +5,9 @@
       <p class="small-title">misson</p>
       <h2 class="text-3xl lg:text-4xl mb-4 lg:max-w-[800px]"><?php echo $mission['title'] ?></h2>
       <p class="font-light lg:max-w-[800px]"><?php echo $mission['content'] ?></p>
-      <?php echo custom_link("about") ?>
+      <div class="flex mt-10">
+        <?php echo custom_link("about") ?>
+      </div>
     </div>
   </div>
   <div class="relative lg:max-w-[50vw] overflow-hidden">

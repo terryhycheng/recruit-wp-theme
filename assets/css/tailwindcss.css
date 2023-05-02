@@ -29,4 +29,18 @@ h6 {
   .form button {
     @apply !bg-secondary !rounded-none !shadow-none hover:!bg-main !text-main hover:!text-white !text-sm !w-full lg:!w-40;
   }
+
+  /* Pagination */
+
+  #pagination div {
+    @apply !flex !gap-4;
+  }
+
+  span[aria-current="page"] {
+    @apply px-2 rounded-full bg-secondary;
+  }
+
+  .main_nav li {
+    @apply hover:!opacity-50 !transition-all;
+  }
 }

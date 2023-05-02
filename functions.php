@@ -20,7 +20,7 @@ add_action('wp_enqueue_scripts', 'recruit_add_scripts');
 // Custom Link Button Component
 function custom_link($link)
 {
-  return '<a href="/' . $link . '" class="mt-10 w-12 h-12"><div class="hover:bg-main hover:text-white duration-300 transition-all text-2xl bg-secondary w-full h-full flex items-center justify-center">-></div></a>';
+  return '<a href="' . $link . '" class="w-12 h-12"><div class="hover:bg-main hover:text-white duration-300 transition-all text-2xl bg-secondary w-full h-full flex items-center justify-center">-></div></a>';
 }
 
 
