@@ -13,7 +13,7 @@ $chars = ["a", "b", "c", "d"]
       <p class="small-title">services</p>
       <h2 class="text-3xl"><?php echo $services['tagline'] ?></h2>
     </div>
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class="grid lg:grid-cols-4 gap-4">
       <?php foreach ($chars as $char) :
         $icon = 'service_' . $char . '_icon';
         $title = 'service_' . $char . '_title';
