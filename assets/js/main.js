@@ -9,3 +9,9 @@ menuIcon.addEventListener("click", () => {
 menuIconOpen.addEventListener("click", () => {
   navbar.classList.add("hide");
 });
+
+window.addEventListener("mouseup", function (event) {
+  if (!navbar.contains(event.target) && !menuIconOpen.contains(event.target)) {
+    navbar.classList.add("hide");
+  }
+});
