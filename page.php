@@ -1,7 +1,5 @@
 <?php get_header() ?>
 
-<div>
-  <h1><?php the_title() ?></h1>
-</div>
+<?php get_template_part('template-parts/single-hero') ?>
 
 <?php get_footer() ?>
