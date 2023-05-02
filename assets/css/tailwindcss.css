@@ -17,8 +17,16 @@ h6 {
   font-family: "Archivo Black", sans-serif;
 }
 
+.hide {
+  display: none;
+}
+
 @layer components {
   .small-title {
     @apply uppercase text-secondary font-bold tracking-wider mb-2;
+  }
+
+  .form button {
+    @apply !bg-secondary !rounded-none !shadow-none hover:!bg-main !text-main hover:!text-white !text-sm !w-full lg:!w-40;
   }
 }
