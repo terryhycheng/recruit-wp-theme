@@ -36,7 +36,7 @@ function jobs_post_type()
       'singular_name' => 'Job'
     ),
     'menu_icon' => 'dashicons-list-view',
-    'supports' => array('title', 'editor', 'thumbnail')
+    'supports' => array('title', 'editor', 'excerpt')
   );
   register_post_type('Jobs', $args);
 }
