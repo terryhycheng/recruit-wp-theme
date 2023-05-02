@@ -1,3 +1,5 @@
+<?php $query = new WP_Query(array('post_type' => 'jobs', 'posts_per_page' => '3')); ?>
+
 <section class="max-w-[1500px] mx-auto px-4 min-h-[40vh] py-20">
   <div class="flex justify-between items-center">
     <div>
@@ -7,19 +9,22 @@
     <?php echo custom_link("jobs") ?>
   </div>
   <div class="grid lg:grid-cols-3 my-8">
-    <?php foreach ([1, 2, 3] as $char) : ?>
-    <div class="text-white bg-main text-sm p-10 border border-white hover:text-main hover:bg-secondary transition-all">
-      <h3 class="text-lg">Frontend Developer</h3>
-      <p>Manchester, UK</p>
-      <p class="my-6">£40000 - £55000 per annum</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur. Turpis sed pulvinar sed blandit rhoncus tellus senectus at quis. Mi at
-        fermentum imperdiet velit magna a aliquam. Faucibus et quam ac elit placerat tristique vulputate
+    <?php while ($query->have_posts()) : $query->the_post(); ?>
+    <div
+      class="text-white bg-main flex flex-col text-sm p-10 border border-white hover:text-main hover:bg-secondary transition-all">
+      <div class="flex-1">
+        <h3 class="text-lg"><?php the_title() ?></h3>
+        <p><?php the_field('location') ?></p>
+      </div>
+      <p class="my-6"><?php the_field('salary') ?></p>
+      <p class="line-clamp-3">
+        <?php echo get_the_excerpt() ?>
       </p>
       <div class="flex">
-        <a href="#" class="mt-8 block capitalize underline">view job</a>
+        <a href="<?php echo get_post_permalink() ?>" class="mt-8 block capitalize underline">view job</a>
       </div>
     </div>
-    <?php endforeach; ?>
+    <?php endwhile;
+    wp_reset_postdata(); ?>
   </div>
 </section>
