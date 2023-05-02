@@ -42,3 +42,22 @@ function jobs_post_type()
 }
 
 add_action('init', 'jobs_post_type');
+
+// Register `Job` post type
+function people_post_type()
+{
+  $args = array(
+    'hierarchical' => true,
+    'public' => true,
+    'has_archive' => true,
+    'labels' => array(
+      'name' => 'People',
+      'singular_name' => 'Person'
+    ),
+    'menu_icon' => 'dashicons-admin-users',
+    'supports' => array('title')
+  );
+  register_post_type('People', $args);
+}
+
+add_action('init', 'people_post_type');
