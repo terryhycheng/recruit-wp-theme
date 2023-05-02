@@ -1,7 +1,6 @@
 <?php get_header() ?>
 
-<div>
-  <h1>Jobs Archive Page</h1>
-</div>
+<?php get_template_part('template-parts/job/job-archive-hero') ?>
+<?php get_template_part('template-parts/job/job-archive-list') ?>
 
 <?php get_footer() ?>
