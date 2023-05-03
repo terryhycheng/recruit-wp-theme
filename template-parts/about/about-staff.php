@@ -12,7 +12,7 @@ $query = new WP_Query(array(
   <div class="max-w-[1500px] mx-auto py-20 lg:py-32">
     <div class="text-center mb-8 lg:mb-16">
       <p class="small-title">our team</p>
-      <h2 class="text-3xl lg:text-4xl"><?php echo $team['tagline'] ?></h2>
+      <h2 class="text-3xl lg:text-4xl capitalize"><?php echo $team['tagline'] ?></h2>
     </div>
     <div class="flex flex-wrap gap-4 lg:gap-6 justify-center mt-10">
       <?php while ($query->have_posts()) : $query->the_post(); ?>
